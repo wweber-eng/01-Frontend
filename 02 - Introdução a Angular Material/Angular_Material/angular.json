@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-material": {
+    "Angular_Material": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -88,10 +88,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-material:build:production"
+              "browserTarget": "Angular_Material:build:production"
             },
             "development": {
-              "browserTarget": "angular-material:build:development"
+              "browserTarget": "Angular_Material:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -99,7 +99,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-material:build"
+            "browserTarget": "Angular_Material:build"
           }
         },
         "test": {
@@ -126,6 +126,6 @@
     }
   },
   "cli": {
-    "analytics": "ec55f921-f7e0-4a89-bb39-1b52e0c5e63d"
+    "analytics": "e735d34c-4410-4b06-ac11-a40890273904"
   }
 }

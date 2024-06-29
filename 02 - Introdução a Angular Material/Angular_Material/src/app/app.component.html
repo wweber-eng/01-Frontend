@@ -1,0 +1,41 @@
+
+<mat-sidenav-container>
+<mat-sidenav
+    #sidenav
+    [opened] = "!isSmallScreen"
+    [fixedInViewport]="true"
+    [mode]="sidenavMode">
+</mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar
+      [class.mat-elevation-z4] = "applyShadow"
+      class="toolbar-menu"
+      color="primary">
+      <button mat-icon-button class="example-icon" aria-label="menu icon" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span
+        *ngIf="popText">Angular Material</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-toolbar
+
+      class="toolbar-submenu"
+      color="primary">
+      <span *ngIf="!popText">Angular Material</span>
+    </mat-toolbar>
+    <br />
+      <app-buttons-icon></app-buttons-icon>
+    <br />
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+<router-outlet></router-outlet>

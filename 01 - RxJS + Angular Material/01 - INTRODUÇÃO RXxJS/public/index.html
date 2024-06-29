@@ -5,8 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./dist/index.js" type="text/javascript" defer></script>
+    <style>
+        #circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: chocolate;
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
-    <!--Se a sua tag script estiver no head, o JavaScript é carregado antes do seu HTML, portanto o elemento que você está tentando acessar ainda não existe no DOM. Você precisará adicionar adiar (defer) ao seu script assim-->
+   <div id="circle">
+
+   </div>
 </body>
 </html>

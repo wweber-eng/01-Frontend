@@ -2,17 +2,20 @@
   flex: 1 1 auto;
 }
 
-mat-sidenav {
-  height: 100vh;
+.title{
+height: 500px;
+}
+
+.sidenav{
   width: 250px;
 }
 
-mat-sidenav-container {
+.mat-sidenav-container{
   height: 100vh;
 }
 
-.title{
-  margin-bottom:  500px;
+.mat-sidenav-content{
+  height: 100vh;
 }
 
 .toolbar-menu{
@@ -21,9 +24,9 @@ mat-sidenav-container {
   top: 0;
 }
 
-.toolbar-submenu
-{
+
+.toolbar-submenu{
   height: 100px;
-  font-size: 1.5rem;
-  margin-top: 50px;
+  font-size: 2rem;
+  margin-top: 60px;
 }

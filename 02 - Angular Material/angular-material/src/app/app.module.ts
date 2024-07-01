@@ -4,21 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
-import { ButtonsIconComponent } from './buttons-icon/buttons-icon.component';
-
+import { MaterialModuleModule } from './material/material-module/material-module.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ButtonsIconComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
-
+    MaterialModuleModule
+  ],
+  exports: [
+    MaterialModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

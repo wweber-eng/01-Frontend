@@ -4,8 +4,17 @@
     [opened] = "!isSmallScreen"
     [fixedInViewport]="true"
     mode="push">
+
+    <mat-toolbar color="primary">
+      <span>Exemplos</span>
+    </mat-toolbar>
+    <mat-nav-list color="primary">
+      <a mat-list-item routerLink="/ButtonsIcons">Material Button Icons</a>
+      <a mat-list-item routerLink="/FormFieldInput">Material Form Field</a>
+    </mat-nav-list>
   </mat-sidenav>
-      <!-- Body -->
+
+  <!-- Body -->
   <mat-sidenav-content>
     <mat-toolbar
       class="toolbar-menu"
@@ -27,14 +36,8 @@
     <mat-toolbar class="toolbar-submenu" color="primary">
       <span *ngIf="!popText">Exemplos Angular Material</span>
     </mat-toolbar>
-
-    <h1 class="title">teste</h1>
-    <h1 class="title">teste</h1>
-    <h1 class="title">teste</h1>
-    <h1 class="title">teste</h1>
-    <h1 class="title">teste</h1>
-
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
-<router-outlet></router-outlet>
+

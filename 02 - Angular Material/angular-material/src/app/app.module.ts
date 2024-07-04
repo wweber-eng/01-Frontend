@@ -6,12 +6,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './material/material-module/material-module.module';
 
+
+import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
+import { MaterialFormFieldsInputComponent } from './material-form-fields-input/material-form-fields-input.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaterialButtonsComponent,
+    MaterialFormFieldsInputComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModuleModule

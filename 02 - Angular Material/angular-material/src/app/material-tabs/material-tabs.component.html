@@ -1,0 +1,59 @@
+<h1>Simple Tabs</h1>
+
+<mat-tab-group
+  mat-align-tabs = "start"
+  animationDuration="500ms">
+<mat-tab>
+  <ng-template mat-tab-label>
+    <mat-icon class="tab-icon">settings</mat-icon>
+    Settings
+  </ng-template>
+  content settings
+</mat-tab>
+
+<mat-tab>
+  <ng-template mat-tab-label>
+    <mat-icon class="tab-icon">person</mat-icon>
+    Person
+  </ng-template>
+  content person
+</mat-tab>
+
+</mat-tab-group>
+
+<br />
+<br />
+<h1>Tabs - Stretch and Below</h1>
+
+<mat-tab-group
+  mat-stretch-tabs
+  class="mat-elevation-z4"
+  headerPosition="below"
+  color = "warn"
+  backgroundColor = "primary"
+
+  animationDuration="500ms">
+<mat-tab>
+  <div class="mat-tab">
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">settings</mat-icon>
+      Settings
+    </ng-template>
+    <h1>Settings</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat illum molestias quo excepturi quibusdam similique qui officia numquam magni dicta quam architecto, veritatis ab, vitae ratione, veniam suscipit consectetur.</p>
+  </div>
+</mat-tab>
+
+<mat-tab>
+
+  <div class="mat-tab">
+    <ng-template mat-tab-label>
+      <mat-icon class="tab-icon">person</mat-icon>
+      Person
+    </ng-template>
+    <h1>Person</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugit repellat! Saepe repellat dicta ut omnis soluta quae autem ipsa quisquam. Quas praesentium aut tempore sint earum incidunt corrupti pariatur.</p>
+  </div>
+</mat-tab>
+
+</mat-tab-group>

@@ -11,12 +11,14 @@ import { MaterialModuleModule } from './material/material-module/material-module
 import { MaterialButtonsComponent } from './material-buttons/material-buttons.component';
 import { MaterialFormFieldsInputComponent } from './material-form-fields-input/material-form-fields-input.component';
 import { MaterialProgressSpinnerComponent } from './material-progress-spinner/material-progress-spinner.component';
+import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
 @NgModule({
   declarations: [
     AppComponent,
     MaterialButtonsComponent,
     MaterialFormFieldsInputComponent,
-    MaterialProgressSpinnerComponent
+    MaterialProgressSpinnerComponent,
+    MaterialTabsComponent
   ],
   imports: [
     BrowserModule,

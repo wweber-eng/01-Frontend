@@ -4,6 +4,20 @@
 <mat-progress-bar  [value]="loadingPercent" color="accent"></mat-progress-bar>
 <br />
 <mat-progress-bar  [value]="loadingPercent" color="warn"></mat-progress-bar>
+
 <h1>Loading - Waiting matCardImageSmall</h1>
-<mat-progress-bar  [value]="loadingPercent"  color="primary"></mat-progress-bar>
+<mat-progress-bar
+    [value]="queryValue"
+    [mode] = "queryMode"
+    color="warn">
+</mat-progress-bar>
+<br />
+
+<h1>Playback</h1>
+<mat-progress-bar
+     mode = "buffer"
+    [value]="loadingPercent"
+    [bufferValue] = "currentPlayback"
+    color="primary">
+</mat-progress-bar>
 <br />

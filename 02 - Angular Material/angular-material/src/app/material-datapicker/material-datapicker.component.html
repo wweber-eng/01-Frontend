@@ -1,0 +1,23 @@
+<h1>Datapicker</h1>
+
+
+<mat-form-field appearance="fill">
+  <mat-label>Digite uma Data</mat-label>
+  <input
+    matInput [matDatepicker]="picker"
+    [min] = "minDate"
+    [max] = "maxDate"
+  >
+  <mat-hint>MM/DD/YYYY</mat-hint>
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker
+    #picker
+    [startAt]="startDate"
+    [touchUi]="IstouchDevice"
+  >
+  </mat-datepicker>
+</mat-form-field>
+
+
+
+

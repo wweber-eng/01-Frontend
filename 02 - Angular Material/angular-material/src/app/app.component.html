@@ -11,6 +11,9 @@
     <mat-nav-list color="primary">
       <a mat-list-item routerLink="/ButtonsIcons">Material Button Icons</a>
       <a mat-list-item routerLink="/FormFieldInput">Material Form Field</a>
+      <a mat-list-item routerLink="/ProgressBarSpinner">Material Progress Bar Spinner</a>
+      <a mat-list-item routerLink="/tabs">Tabs</a>
+      <a mat-list-item routerLink="/datapicker">Datapicker</a>
     </mat-nav-list>
   </mat-sidenav>
 
@@ -24,7 +27,7 @@
       (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-      <span *ngIf="popText">Exemplos Angular Material</span>
+      <span *ngIf="popText">Angular Material</span>
       <span class="example-spacer"></span>
       <button mat-icon-button >
         <mat-icon>favorite</mat-icon>
@@ -34,9 +37,11 @@
       </button>
     </mat-toolbar>
     <mat-toolbar class="toolbar-submenu" color="primary">
-      <span *ngIf="!popText">Exemplos Angular Material</span>
+      <span *ngIf="!popText">Angular Material</span>
     </mat-toolbar>
-    <router-outlet></router-outlet>
+    <div class="div-content">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
 

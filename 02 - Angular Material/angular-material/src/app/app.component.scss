@@ -22,6 +22,7 @@ height: 500px;
   position: fixed;
   font-size: 1rem;
   top: 0;
+  z-index: 1001;
 }
 
 
@@ -42,4 +43,8 @@ button.mat-menu-item{
 button.mat-menu-item:hover {
     background-color: blue;
     color: #fff !important;
+}
+
+.div-content{
+  padding: 20px;
 }

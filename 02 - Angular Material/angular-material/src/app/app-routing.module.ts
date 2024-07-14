@@ -4,12 +4,13 @@ import { MaterialButtonsComponent } from './material-buttons/material-buttons.co
 import { MaterialFormFieldsInputComponent } from './material-form-fields-input/material-form-fields-input.component';
 import { MaterialProgressSpinnerComponent } from './material-progress-spinner/material-progress-spinner.component';
 import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
+import { MaterialDatapickerComponent } from './material-datapicker/material-datapicker.component';
 
 const routes: Routes = [
   {  path: 'ButtonsIcons', component: MaterialButtonsComponent  },
   {  path: 'FormFieldInput', component: MaterialFormFieldsInputComponent },
   {  path: 'ProgressBarSpinner', component: MaterialProgressSpinnerComponent },
-  {  path: 'tabs', component: MaterialTabsComponent}
+  {  path: 'datapicker', component: MaterialDatapickerComponent}
 ];
 
 @NgModule({

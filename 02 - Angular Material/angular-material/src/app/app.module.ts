@@ -11,6 +11,8 @@ import { MaterialFormFieldsInputComponent } from './material-form-fields-input/m
 import { MaterialProgressSpinnerComponent } from './material-progress-spinner/material-progress-spinner.component';
 import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
 import { MaterialDatapickerComponent } from './material-datapicker/material-datapicker.component';
+import { MaterialSnackbarComponent } from './material-snackbar/material-snackbar.component';
+import { MaterialDialogComponent } from './material-dialog/material-dialog.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { MaterialDatapickerComponent } from './material-datapicker/material-data
     MaterialFormFieldsInputComponent,
     MaterialProgressSpinnerComponent,
     MaterialTabsComponent,
-    MaterialDatapickerComponent
+    MaterialDatapickerComponent,
+    MaterialSnackbarComponent,
+    MaterialDialogComponent
   ],
   imports: [
     BrowserModule,

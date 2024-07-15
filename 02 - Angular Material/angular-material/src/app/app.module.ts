@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
+
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,8 @@ import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
 import { MaterialDatapickerComponent } from './material-datapicker/material-datapicker.component';
 import { MaterialSnackbarComponent } from './material-snackbar/material-snackbar.component';
 import { MaterialDialogComponent } from './material-dialog/material-dialog.component';
+import { MaterialSnackbarMessageComponent } from './material-snackbar/material-snackbar-message/material-snackbar-message.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,8 @@ import { MaterialDialogComponent } from './material-dialog/material-dialog.compo
     MaterialTabsComponent,
     MaterialDatapickerComponent,
     MaterialSnackbarComponent,
-    MaterialDialogComponent
+    MaterialDialogComponent,
+    MaterialSnackbarMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,9 @@ import { MaterialDialogComponent } from './material-dialog/material-dialog.compo
   exports: [
     MaterialModuleModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: {duration: 2500}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

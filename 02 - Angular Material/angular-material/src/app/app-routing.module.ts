@@ -7,7 +7,7 @@ import { MaterialTabsComponent } from './material-tabs/material-tabs.component';
 import { MaterialDatapickerComponent } from './material-datapicker/material-datapicker.component';
 import { MaterialSnackbarComponent } from './material-snackbar/material-snackbar.component';
 import { MaterialDialogComponent } from './material-dialog/material-dialog.component';
-
+import { MaterialDatatableComponent } from './material-datatable/material-datatable.component';
 
 const routes: Routes = [
   {  path: 'ButtonsIcons', component: MaterialButtonsComponent  },
@@ -17,6 +17,7 @@ const routes: Routes = [
   {  path: 'datapicker', component: MaterialDatapickerComponent},
   {  path: 'snackbar', component: MaterialSnackbarComponent },
   {  path: 'dialog', component: MaterialDialogComponent },
+  {  path: 'datatable', component: MaterialDatatableComponent },
 ];
 
 @NgModule({

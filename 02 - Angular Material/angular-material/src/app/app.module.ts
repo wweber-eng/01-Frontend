@@ -17,6 +17,7 @@ import { MaterialSnackbarComponent } from './material-snackbar/material-snackbar
 import { MaterialDialogComponent } from './material-dialog/material-dialog.component';
 import { MaterialSnackbarMessageComponent } from './material-snackbar/material-snackbar-message/material-snackbar-message.component';
 import { MaterialDialogMessageComponent } from './material-dialog/material-dialog-message/material-dialog-message.component';
+import { MaterialDatatableComponent } from './material-datatable/material-datatable.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MaterialDialogMessageComponent } from './material-dialog/material-dialo
     MaterialSnackbarComponent,
     MaterialDialogComponent,
     MaterialSnackbarMessageComponent,
-    MaterialDialogMessageComponent
+    MaterialDialogMessageComponent,
+    MaterialDatatableComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,8 @@
-<p>material-dialog works!</p>
+<h1>Dialogs</h1>
+<button mat-raised-button color="primary" (click)="openDialog()">
+  <mat-icon>favorite</mat-icon>
+  Meu pet Favorito
+</button>
+<br />
+<br />
+<p *ngIf="message">{{message}}</p>

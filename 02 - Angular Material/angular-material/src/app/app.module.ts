@@ -16,6 +16,7 @@ import { MaterialDatapickerComponent } from './material-datapicker/material-data
 import { MaterialSnackbarComponent } from './material-snackbar/material-snackbar.component';
 import { MaterialDialogComponent } from './material-dialog/material-dialog.component';
 import { MaterialSnackbarMessageComponent } from './material-snackbar/material-snackbar-message/material-snackbar-message.component';
+import { MaterialDialogMessageComponent } from './material-dialog/material-dialog-message/material-dialog-message.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MaterialSnackbarMessageComponent } from './material-snackbar/material-s
     MaterialDatapickerComponent,
     MaterialSnackbarComponent,
     MaterialDialogComponent,
-    MaterialSnackbarMessageComponent
+    MaterialSnackbarMessageComponent,
+    MaterialDialogMessageComponent
   ],
   imports: [
     BrowserModule,

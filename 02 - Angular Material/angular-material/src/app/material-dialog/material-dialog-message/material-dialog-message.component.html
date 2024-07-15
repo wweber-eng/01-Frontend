@@ -1,0 +1,18 @@
+<h1 mat-dialog-title> olá, {{data}}</h1>
+
+<mat-dialog-content>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium debitis ex provident natus eum modi cumque quo quia ea ipsam, ipsa laboriosam maxime explicabo quibusdam enim eos omnis facilis inventore!</p>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+<button mat-raised-button color="primary" (click)="closeDialog()">
+  <mat-icon>close</mat-icon>
+  Close
+</button>
+
+
+<button mat-raised-button color="warn" [mat-dialog-close]="'Returned HTML!'">
+  <mat-icon>close</mat-icon>
+  Close
+</button>
+<mat-dialog-actions>

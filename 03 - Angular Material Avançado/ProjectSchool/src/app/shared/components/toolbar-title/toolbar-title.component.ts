@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-toolbar-title',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbar-title.component.scss']
 })
 export class ToolbarTitleComponent {
+  @Input() title: string = "";
+  @Input() icon: string = "";
 
 }

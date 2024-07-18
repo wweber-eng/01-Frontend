@@ -1,45 +1,54 @@
+<app-toolbar-menu
+  [menuTitle]="menuName"
+  [popText]="popText"
+  [shadow]="applyShadow"
+  [items_menu] = "items_menu"
+  >
+</app-toolbar-menu>
 <mat-sidenav-container>
-  <mat-sidenav #sidenav
-    class="sidenav"
-    [opened] = "!isSmallScreen"
+  <mat-sidenav
+    class="sidenav mat-elevation-z2"
+    #sidenav
+    [opened]="!isSmallScreen"
     [fixedInViewport]="true"
-    mode="push">
-
-    <mat-toolbar color="primary">
-      <span>Menu</span>
+    [mode]="sidenavMode"
+  >
+    <mat-toolbar>
+      <img class="avatar mat-elevation-z4" src="../assets/img-avatar/img-foto-capa.jpeg">
+      <a routerLink="/users" class="name">Waldir Weber Junior</a>
+      <p class="designation">Senior Software Analytics</p>
     </mat-toolbar>
-    <mat-nav-list color="primary">
-      <a mat-list-item routerLink="users">Users</a>
-
+    <mat-divider></mat-divider>
+    <mat-nav-list>
       <a *ngFor="let item of items_menu" mat-list-item
       [routerLink]="item.link" routerLinkActive="active">
         <mat-icon fontSet="fa" [fontIcon]="item.icon"></mat-icon>
         <span>{{item.label}}</span>
       </a>
-
     </mat-nav-list>
   </mat-sidenav>
 
-  <!-- Body -->
   <mat-sidenav-content>
-    <mat-toolbar
-      class="toolbar-menu"
-      color="primary"
-      [class.mat-elevation-z4]="applyShadow">
-      <button mat-icon-button
-      (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span *ngIf="popText">Projeto Escolar</span>
-      <span class="example-spacer"></span>
-    </mat-toolbar>
     <mat-toolbar class="toolbar-submenu" color="primary">
-      <span *ngIf="!popText">Projeto Escolar</span>
+      <mat-toolbar-row class="toolbar-submenu-top">
+        <button
+          matTooltip="{{sidenav.opened ? 'Fechar menu' : 'abrir menu'}}"
+          matTooltipPosition="right"
+          mat-icon-button
+          class="example-icon"
+          (click)="sidenav.toggle()"
+        >
+          <mat-icon>
+            {{sidenav.opened ? 'close' : 'menu'}}
+          </mat-icon>
+        </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row class="toolbar-submenu-title">
+        <span *ngIf="!popText">{{menuName}}</span>
+      </mat-toolbar-row>
     </mat-toolbar>
-    <div class="div-content">
-      <router-outlet></router-outlet>
-    </div>
+
+    <router-outlet></router-outlet>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
-
-

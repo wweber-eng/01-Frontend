@@ -11,6 +11,7 @@ import { MyConquestsComponent } from './my-conquests/my-conquests.component';
 import { MyDisciplinesComponent } from './my-disciplines/my-disciplines.component';
 
 
+
 @NgModule({
   declarations: [
     UsersComponent,
@@ -21,7 +22,8 @@ import { MyDisciplinesComponent } from './my-disciplines/my-disciplines.componen
   imports: [
   CommonModule,
     UsersRoutingModule,
-    MaterialUsersModuleModule
+    MaterialUsersModuleModule,
+
   ]
 })
 export class UsersModule { }

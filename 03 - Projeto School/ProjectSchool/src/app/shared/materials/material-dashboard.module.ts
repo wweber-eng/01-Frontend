@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 
-import { MatTabsModule }   from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 
@@ -9,11 +8,10 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
   ],
   exports: [
-    MatTabsModule,
     MatIconModule,
-    MatButtonModule,
+    MatButtonModule
   ],
   declarations: [],
   providers: []
 })
-export class MaterialUsersModuleModule { }
+export class MaterialDashboardModuleModule { }

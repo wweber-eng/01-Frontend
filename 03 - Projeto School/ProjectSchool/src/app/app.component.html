@@ -6,17 +6,17 @@
     mode="push">
 
     <mat-toolbar color="primary">
-      <span>Exemplos</span>
+      <span>Menu</span>
     </mat-toolbar>
     <mat-nav-list color="primary">
       <a mat-list-item routerLink="users">Users</a>
-      <a mat-list-item routerLink="/FormFieldInput">Material Form Field</a>
-      <a mat-list-item routerLink="/ProgressBarSpinner">Material Progress Bar Spinner</a>
-      <a mat-list-item routerLink="/tabs">Tabs</a>
-      <a mat-list-item routerLink="/datapicker">Datapicker</a>
-      <a mat-list-item routerLink="/snackbar">Snackbar</a>
-      <a mat-list-item routerLink="/dialog">Dialog</a>
-      <a mat-list-item routerLink="/datatable">DataTable</a>
+
+      <a *ngFor="let item of items_menu" mat-list-item
+      [routerLink]="item.link" routerLinkActive="active">
+        <mat-icon fontSet="fa" [fontIcon]="item.icon"></mat-icon>
+        <span>{{item.label}}</span>
+      </a>
+
     </mat-nav-list>
   </mat-sidenav>
 
@@ -30,11 +30,11 @@
       (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
-      <span *ngIf="popText">Angular Material</span>
+      <span *ngIf="popText">Projeto Escolar</span>
       <span class="example-spacer"></span>
     </mat-toolbar>
     <mat-toolbar class="toolbar-submenu" color="primary">
-      <span *ngIf="!popText">Angular Material</span>
+      <span *ngIf="!popText">Projeto Escolar</span>
     </mat-toolbar>
     <div class="div-content">
       <router-outlet></router-outlet>

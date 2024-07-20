@@ -1,0 +1,35 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Desenvolvimento Web Avançado com RxJs",
+      "category": "Tecnologia",
+      "rating": 4.7,
+      "year": 2022,
+      "teacher": "Lucas Oliveira",
+      "description": "Aprenda RxJs de forma avançada. (Tecnologia)",
+      "imgURL": "./../../../../assets/img-courses/capa-cursos-angular-rxjs.webp"
+    },
+    {
+      "id": 2,
+      "name": "Machine Learning e Inteligência Artificial",
+      "category": "Tecnologia",
+      "rating": 4.9,
+      "year": 2023,
+      "teacher": "Ana Beatriz Silva",
+      "description": "Domine Machine Learning e IA. (Tecnologia)",
+      "imgURL": "./../../../../assets/img-courses/capa-cursos-angular-02.webp"
+
+    },
+    {
+      "id": 3,
+      "name": "(MBA) De Data Science Analitycs",
+      "category": "Tecnologia",
+      "rating": 4.3,
+      "year": 2020,
+      "teacher": "Gustavo Santos",
+      "description": "MBA de Data Science e Analitycs. (Tecnologia)",
+      "imgURL": "./../../../../assets/img-courses/capa-cursos-01.jpeg"
+    }
+  ]
+}
